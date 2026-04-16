@@ -1,9 +1,12 @@
 package com.example.skillswap;
 
+import java.util.ArrayList;
+
 public class DataHolder {
 
     public static String selectedSkill;
     public static String selectedMentor;
+    public static ArrayList<String> favorite = new ArrayList<>();
 
 //    public static HashMap<String, String[]> skillCategory = new HashMap<>();
 //    public static HashMap<String, String[]> skillListMentor = new HashMap<>();

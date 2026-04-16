@@ -52,6 +52,12 @@ public class skilldescription extends AppCompatActivity {
         
     }
 
+    public void starred(View view) {
+
+        DataHolder.favorite.add(tvName.getText()+"");
+
+    }
+
     public void goToMentor(View v) {
 
         String mentor = ((TextView)v).getText()+"";
