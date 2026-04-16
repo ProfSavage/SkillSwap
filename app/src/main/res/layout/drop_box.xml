@@ -24,6 +24,7 @@
             android:textAlignment="textStart" />
 
         <FrameLayout
+            android:id="@+id/flSkills"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="right">

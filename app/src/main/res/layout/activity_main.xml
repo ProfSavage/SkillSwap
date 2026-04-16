@@ -29,7 +29,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:onClick="categoriesPressed">
 
             <View
                 android:id="@+id/view"
@@ -45,7 +46,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                app:srcCompat="@drawable/skillCate" />
+                app:srcCompat="@drawable/skillcate" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -90,7 +91,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                app:srcCompat="@drawable/skillList" />
+                app:srcCompat="@drawable/skilllist" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -135,7 +136,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                app:srcCompat="@drawable/skillList" />
+                app:srcCompat="@drawable/skilllist" />
 
             <TextView
                 android:id="@+id/textView4"
