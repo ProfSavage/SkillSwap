@@ -16,7 +16,8 @@ public class skillCategories extends AppCompatActivity {
 
     ListView lv;
     CategoryAdapter adapter;
-    List<SkillCategory> data;
+    public static List<SkillCategory> dataC;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,15 +30,15 @@ public class skillCategories extends AppCompatActivity {
             return insets;
         });
 
-            data = new ArrayList<>();
-            data.add(new SkillCategory("Technology & Coding","Introduction to Python", "Web Development Basics", "How to Set Up a Smart Home"));
-            data.add(new SkillCategory("Arts & Crafts","Digital Illustration for Beginners", "DIY Home Decor", "Calligraphy & Hand Lettering"));
-            data.add(new SkillCategory("Fitness & Wellness","Meditation Techniques", "Strength Training for Beginners", "Basic Yoga Poses"));
-            data.add(new SkillCategory("Language & Communication","Conversational Spanish", "Public Speaking and Confidence Building", "Writing a Resume that Stands Out"));
-            data.add(new SkillCategory("Business & Finance","Basics of Stocks Market Investing", "Social Media Marketing for Small Businesses", "Time Management Strategies"));
+            dataC = new ArrayList<>();
+            dataC.add(new SkillCategory("Technology & Coding","Introduction to Python", "Web Development Basics", "How to Set Up a Smart Home"));
+            dataC.add(new SkillCategory("Arts & Crafts","Digital Illustration for Beginners", "DIY Home Decor", "Calligraphy & Hand Lettering"));
+            dataC.add(new SkillCategory("Fitness & Wellness","Meditation Techniques", "Strength Training for Beginners", "Basic Yoga Poses"));
+            dataC.add(new SkillCategory("Language & Communication","Conversational Spanish", "Public Speaking and Confidence Building", "Writing a Resume that Stands Out"));
+            dataC.add(new SkillCategory("Business & Finance","Basics of Stocks Market Investing", "Social Media Marketing for Small Businesses", "Time Management Strategies"));
 
 
-        adapter = new CategoryAdapter(this, data);
+        adapter = new CategoryAdapter(this, dataC);
             lv = findViewById(R.id.lvCategory);
             lv.setAdapter(adapter);
 
