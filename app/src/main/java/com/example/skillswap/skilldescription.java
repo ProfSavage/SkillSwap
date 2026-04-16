@@ -1,6 +1,8 @@
 package com.example.skillswap;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -50,5 +52,13 @@ public class skilldescription extends AppCompatActivity {
         
     }
 
-    public void
+    public void goToMentor(View v) {
+
+        String mentor = ((TextView)v).getText()+"";
+        DataHolder.selectedMentor = mentor;
+
+        Intent i = new Intent(this, profile.class);
+        startActivity(i);
+
+    }
 }
