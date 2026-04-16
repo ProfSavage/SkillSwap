@@ -3,6 +3,7 @@ package com.example.skillswap;
 public class DataHolder {
 
     public static String selectedSkill;
+    public static String selectedMentor;
 
 //    public static HashMap<String, String[]> skillCategory = new HashMap<>();
 //    public static HashMap<String, String[]> skillListMentor = new HashMap<>();
