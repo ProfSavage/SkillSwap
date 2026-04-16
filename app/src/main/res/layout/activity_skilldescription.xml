@@ -9,141 +9,176 @@
     tools:context=".profile">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageView"
         android:padding="10dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/leftarrow" />
+        app:srcCompat="@drawable/backarrow" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:orientation="horizontal">
+    <androidx.cardview.widget.CardView
 
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_gravity="center"
-            android:layout_height="wrap_content"
-
-            app:srcCompat="@drawable/profile" />
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_gravity="center"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-
-            android:text="Name" />
-
-        <ImageView
-            android:id="@+id/imageView10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            app:srcCompat="@drawable/selectedstar"
-            android:onClick="starred"/>
-    </LinearLayout>
-
-    <ScrollView
-        android:layout_width="340dp"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center"
-        android:layout_height="200dp">
+        app:cardCornerRadius="20dp"
+        android:layout_width="wrap_content"
+        app:cardBackgroundColor="#D2D7DC"
+        android:layout_height="wrap_content" >
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                app:srcCompat="@drawable/profile" />
 
             <TextView
-                android:id="@+id/textView6"
-                android:layout_width="match_parent"
+                android:id="@+id/textView5"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:text="sdfsdfsadfasdfsdfgsdfgfsdgfsdfgsadgfasdfsdfsdgfsdgsdgsdgs" />
-        </LinearLayout>
-    </ScrollView>
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="Name" />
 
-    <FrameLayout
-        android:layout_width="340dp"
-        android:layout_marginTop="40dp"
-        android:background="@color/cardview_dark_background"
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/star" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
         android:layout_gravity="center"
-        android:layout_height="200dp">
+        app:cardBackgroundColor="#D2D7DC"
+        app:cardCornerRadius="20dp"
+        android:layout_width="350dp"
+        android:layout_height="400dp" >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="200dp"
+            <TextView
+                android:id="@+id/textView6"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="Description" />
 
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/imageView7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    app:srcCompat="@drawable/littleprof" />
-
-                <TextView
-                    android:id="@+id/tvm1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Name"
-                    android:onClick="goToMentor"/>
-            </LinearLayout>
+            <View
+                android:id="@+id/view2"
+                android:layout_width="300dp"
+                android:background="@color/black"
+                android:layout_gravity="center"
+                android:layout_height="2dp" />
 
             <LinearLayout
-                android:layout_width="200dp"
-
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <ImageView
-                    android:id="@+id/imageView8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_height="130dp" >
 
-                    app:srcCompat="@drawable/littleprof" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/tvm2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Name"
-                    android:onClick="goToMentor"/>
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/smallprofile" />
+
+                        <TextView
+                            android:id="@+id/tvm1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Name" />
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+
+                    app:cardCornerRadius="20dp"
+                    android:layout_height="130dp" >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/smallprofile" />
+
+                        <TextView
+                            android:id="@+id/tvm2"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Name" />
+                    </LinearLayout> />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="20dp"
+                    android:layout_height="130dp" >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/smallprofile" />
+
+                        <TextView
+                            android:id="@+id/tvm3"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Name" />
+                    </LinearLayout> />
+                </androidx.cardview.widget.CardView>
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="200dp"
 
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/imageView9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    app:srcCompat="@drawable/littleprof" />
-
-                <TextView
-                    android:id="@+id/tvm3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Name"
-                    android:onClick="goToMentor"/>
-            </LinearLayout>
         </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
-
-    </FrameLayout>
 </LinearLayout>
