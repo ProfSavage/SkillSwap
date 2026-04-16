@@ -121,7 +121,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:onClick="gotofavorite">
 
             <View
                 android:id="@+id/view2"
@@ -148,7 +149,7 @@
                 android:textStyle="bold"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Book Mark &amp; Favorite" />
+                android:text="Bookmark &amp; Favorite" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 

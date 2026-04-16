@@ -67,4 +67,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
 
     }
+
+    public void gotofavorite(View view) {
+
+        Intent i = new Intent(this, favorite.class);
+        startActivity(i);
+
+    }
 }

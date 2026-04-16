@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,6 +17,8 @@ public class skilldescription extends AppCompatActivity {
     TextView tvName;
     String m1, m2, m3;
     TextView tvm1, tvm2, tvm3;
+
+    boolean flag;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,9 +56,13 @@ public class skilldescription extends AppCompatActivity {
     }
 
     public void starred(View view) {
-
-        DataHolder.favorite.add(tvName.getText()+"");
-
+        if(!DataHolder.favorite.contains(tvName.getText()+"")) {
+            DataHolder.favorite.add(tvName.getText() + "");
+            Toast.makeText(this, "Favorited", Toast.LENGTH_SHORT).show();
+        }else{
+            DataHolder.favorite.remove(tvName.getText()+"");
+            Toast.makeText(this, "Unfavorited", Toast.LENGTH_SHORT).show();
+        }
     }
 
     public void goToMentor(View v) {

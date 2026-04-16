@@ -1,6 +1,7 @@
 package com.example.skillswap;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +21,11 @@ public class favorite extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        TextView tv11 = findViewById(R.id.textView11);
+
+        for (String i: DataHolder.favorite) {
+            tv11.setText(tv11.getText() + "\n" + i);
+        }
     }
 }
