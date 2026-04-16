@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SkillSwap">
         <activity
+            android:name=".form"
+            android:exported="false" />
+        <activity
             android:name=".skilldescription"
             android:exported="false" />
         <activity
