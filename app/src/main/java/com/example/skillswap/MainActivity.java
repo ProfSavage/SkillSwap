@@ -1,6 +1,8 @@
 package com.example.skillswap;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,21 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        DataHolder dh = new DataHolder();
+
+    }
+
+    public void categoriesPressed(View view) {
+
+        try {
+            Intent i = new Intent(this, skillCategories.class);
+            startActivity(i);
+        } catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+
+
     }
 }
