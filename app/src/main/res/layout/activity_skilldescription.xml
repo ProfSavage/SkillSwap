@@ -84,7 +84,7 @@
                     app:srcCompat="@drawable/littleprof" />
 
                 <TextView
-                    android:id="@+id/textView12"
+                    android:id="@+id/tvm1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -106,7 +106,7 @@
                     app:srcCompat="@drawable/littleprof" />
 
                 <TextView
-                    android:id="@+id/textView13"
+                    android:id="@+id/tvm2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -127,7 +127,7 @@
                     app:srcCompat="@drawable/littleprof" />
 
                 <TextView
-                    android:id="@+id/textView14"
+                    android:id="@+id/tvm3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"

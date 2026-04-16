@@ -1,6 +1,7 @@
 package com.example.skillswap;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -102,9 +103,33 @@ public class CategoryAdapter extends BaseAdapter {
             }
         });
 
-        return convertView;
-    }
-    public void showToast(ViewHolder vh){
+        vh.skill1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DataHolder.selectedSkill = ((Button)v).getText()+"";
+                Intent i = new Intent(v.getContext(), skilldescription.class);
+                v.getContext().startActivity(i);
+            }
+        });
 
+        vh.skill2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DataHolder.selectedSkill = ((Button)v).getText()+"";
+                Intent i = new Intent(v.getContext(), skilldescription.class);
+                v.getContext().startActivity(i);
+            }
+        });
+
+        vh.skill3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DataHolder.selectedSkill = ((Button)v).getText()+"";
+                Intent i = new Intent(v.getContext(), skilldescription.class);
+                v.getContext().startActivity(i);
+            }
+        });
+
+        return convertView;
     }
 }

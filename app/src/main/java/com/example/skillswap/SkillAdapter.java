@@ -1,6 +1,7 @@
 package com.example.skillswap;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -55,6 +56,14 @@ public class SkillAdapter extends BaseAdapter {
 
         SkillData item = data.get(position);
         vh.skill.setText(item.skill);
+        vh.skill.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DataHolder.selectedSkill = ((Button)v).getText()+"";
+                Intent i = new Intent(v.getContext(), skilldescription.class);
+                v.getContext().startActivity(i);
+            }
+        });
 
         return convertView;
     }
