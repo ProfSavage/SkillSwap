@@ -34,10 +34,17 @@
         <TextView
             android:id="@+id/textView5"
             android:layout_gravity="center"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
 
             android:text="Name" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/selectedstar" />
     </LinearLayout>
 
     <ScrollView
